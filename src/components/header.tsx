@@ -6,7 +6,7 @@ interface HeaderProps {
     resourcesRef: React.RefObject<HTMLElement>;
 }
 
-const Header: React.FC<HeaderProps> = ({ resourcesRef }) => { 
+const Header: React.FC<HeaderProps> = ({ resourcesRef }) => {
     return (
         // Header
         <section id="header">

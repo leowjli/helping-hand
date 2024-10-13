@@ -143,3 +143,19 @@ a:hover {
   width: 40%;
   height: auto;
 }
+
+.footer-info {
+	margin: 3rem 8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: end;
+}
+
+.footer-info h2 {
+	color: #646cff;
+}
+
+.copyright {
+	text-align: center;
+}
