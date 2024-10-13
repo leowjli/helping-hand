@@ -2906,3 +2906,46 @@ input, select, textarea {
 			}
 
 	}
+
+	/* 添加到你的main.css文件中 */
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5480f1;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #4070e0;
+}
+
+#main section {
+    margin-bottom: 30px;
+}
+
+#main h3 {
+    color: #5480f1;
+    margin-bottom: 10px;
+}
+
+#map {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
