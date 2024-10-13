@@ -1,18 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Nav from "./Navbar";
 import Hero from "./hero";
-import Banner from "./banner";
+import Nav from "./navbar";
 
-const Header: React.FC = () => {
+interface HeaderProps {
+    resourcesRef: React.RefObject<HTMLElement>;
+}
+
+const Header: React.FC<HeaderProps> = ({ resourcesRef }) => { 
     return (
-        // <!-- Header -->
+        // Header
         <section id="header">
-            {/* <!-- Logo --> */}
-            <h1><Link to="./App.tsx">Dopetrope</Link></h1>
             <Nav />
-            <Hero />
-            <Banner />
+            <Hero resourcesRef={resourcesRef}/>
         </section>
     );
 }

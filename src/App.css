@@ -1,42 +1,145 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  min-height: 100vh;
+  width: 100%;
+  background: #CCE8F4 url("/images/pic01.jpg")
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+#header {
+  margin: 0;
+  padding: 0;
+}
+
+#header h2 {
   padding: 2rem;
-  text-align: center;
+  text-align: left;
+  letter-spacing: -0.035em;
+  line-height: 1;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.menu {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.menu li{
+  list-style-type: None;
+  padding: 1.7rem;
+}
+
+.menu li a {
+  padding-bottom: 0.3rem;
+  font-size: 1.5em;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+
+.menu li a:hover {
+  border-bottom: 2px solid#646cff;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 7rem 7rem 5rem 7rem;
+}
+
+#header .banner h1 {
+  padding: 0.5rem 0;
+}
+
+/* resources arrow */
+.resources-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 7rem;
+  font-size: 16px;
+  color: #333;
+}
+
+#header .resources-button h2 {
+  padding: 0;
+}
+
+.arrow {
+  margin-top: 2rem;
+  font-size: 36px;
+  animation: bob 1s infinite alternate;
+}
+
+@keyframes bob {
+  0% {
+      transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+      transform: translateY(-10px);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem -1rem;
 }
 
 .card {
-  padding: 2em;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
-.read-the-docs {
-  color: #888;
+.box {
+  max-width: 400px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(100, 108, 255, 0.7);
+  margin: 1rem 0;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  border: 3px solid #646cff;
+}
+
+.image.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.image.featured img {
+  width: 40%;
+  height: auto;
 }
